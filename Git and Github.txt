@@ -1,0 +1,65 @@
+Que. 1    What is Git?
+(Answer)    Git is a popular version control system. It was created by Linus Torvalds in 2005, and has been maintained by Junio Hamano since then.
+
+It is used for:
+
+Tracking code changes
+Tracking who made changes
+Coding collaboration
+
+Que. 2       What do you understand by the term 'version control system'?
+(Answer)    A version control system is a software that tracks changes to a file or set of files over time so that you can recall specific versions later. It also allows you to work together with other programmers.
+
+The version control system is a collection of software tools that help a team to manage changes in a source code. It uses a special kind of database to keep track of every modification to the code.
+
+Developers can compare earlier versions of the code with an older version to fix the mistakes.
+
+Que. 3       What is Github?
+(Answer)      GitHub is a Git repository hosting service. GitHub also facilitates with many of its features, such as access control and collaboration. It provides a Web-based graphical interface.
+
+GitHub is an American company. It hosts source code of your project in the form of different programming languages and keeps track of the various changes made by programmers.
+
+It offers both distributed version control and source code management (SCM) functionality of Git. It also facilitates with some collaboration features such as bug tracking, feature requests, task management for every project.
+
+
+Que. 4      mention some popular Git hosting services?
+(Answer)   These are some popular Git hosting services:-
+Github :-    As a free, open-source hosting option, GitHub provides software development version control. It’s cloud-based, making it easy for users to manage, collaborate, and store their code. GitHub is known as the largest online storage space for collaborative work. Users love it for its easy-to-navigate UI and valuable features and support 200 programming languages. Teams can utilize its joint code review, issue and bug tracking, and organization management features.
+
+GitLab :-    GitLab is a collaborative development platform and an open-source code repository written in Ruby and GO. The platform supports both public and private development branches and has 1400+ contributors. Key features include application release and delivery features, a web-based Git repository manager, and statistics and analytics features.
+
+Bitbucket :-   For version control, Bitbucket is one of the best tools. It was also acquired by Atlassian, who has done a great job of improving it and providing lots of great Atlassian add-ons to make it even more flexible and powerful. Bitbucket is also more than just hosting. It allows teams to plan projects, test, collaborate and deploy all from one central place. There’s also a free version, and Bitbucket is known for its competitive pricing while being available for Windows, Linux, Mac, iOS, and Android.
+
+Beanstalk :-   As an orchestration service, Beanstalk offers easy auto-scaling options, ways to accelerate the development timeline, excellent customization capabilities, and super-quick configuration and automation (among other capabilities). It’s secure and reliable and a great alternative to GitHub. If you run on either Windows or Linux, it supports both.
+
+Amazon AWS CodeCommit :-    As an option that is completely managed and hosted by Amazon, Amazon AWS CodeCommit can privately host data while handling it in the cloud for high scalability. It supports Git’s standard functionalities and allows users to create 1,000+ repositories. For users that need high availability, as an Amazon service, AWS CodeCommit can store repositories in Amazon S3 and Amazon DynamoDB. It’s also easy to integrate with third-party tools.
+
+Azure DevOps:-    Microsoft’s Azure DevOps offers Git users an open platform for their development stack. It hosts code and offers its own continuous integration service (and agile planning tools) for scrums. There’s also the potential for code reviews and issue trackers.
+
+Que.5    Different types of version control systems.
+(Answer)    These are the different types of version control systems :-
+              1.     Local Version Control Systems
+               2.   Centralized Version Control Systems
+               3.     Distributed Version Control Systems
+
+Que.6       What benefits come with using Git?
+(Answer)     Git provide us these some benefits so we should to use it.
+
+                    Performance :-  Git provides the best performance when it comes to version control systems. Committing, branching, merging all are optimized for a better performance than other systems.
+
+Security :-  Git handles your security with cryptographic method SHA-1. The algorithm manages your versions, files, and directory securely so that your work is not corrupted.
+
+Branching Model :-  Git has a different branching model than the other VCS. Git branching model lets you have multiple local branches which are independent of each other. Having this also enables you to have friction-less context switching (switch back and forth to new commit, code and back), role-based code (a branch that always goes to production, another to testing etc) and disposable experimentation (try something out, if does not work, delete it without any loss of code).
+
+Staging Area :- Git has an intermediate stage called "index" or "staging area" where commits can be formatted and modified before completing the commit.
+
+Distributed :- Git is distributed in nature. Distributed means that the repository or the complete code base is mirrored onto the developer's system so that he can work on it only.
+
+Open Source :-  This is a very important feature of any software present today. Being open source invites the developers from all over the world to contribute to the software and make it more and more powerful through features and additional plugins. This has led the Linux kernel to be a software of about 15 million lines of code. 
+
+Que. 7     What is a Git repository?
+(Answer)      In Git, the repository is like a data structure used by VCS to store metadata for a set of files and directories. It contains the collection of the files as well as the history of changes made to those files. Repository in Git is considered as your project folder. A repository has all the project-related data. Distinct projects have distinct repositories.
+
+Que. 8       How can you initialize a repository in Git?
+(Answer)         To create a new repository the git init command is used. It is used to convert an existing project to git repository.This is the first and one time command we use during initialization of a new repository. When git init command is executed, .git subdirectory is created.This includes subdirectories for objects,template files etc.
+
