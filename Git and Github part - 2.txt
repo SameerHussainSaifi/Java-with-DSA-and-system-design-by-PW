@@ -1,0 +1,46 @@
+Que. 1      How to check if git is available on your system?
+(Answer)      simply open a terminal window and type "git --version" and it shows us which version is installed on our system.
+
+Que.2      How to initialize a new Git repository ?
+(Answer)      To create a new repo,we will use the git init command. git init is a one-time command we use during the initial setup of a new repo. Executing this command will create a new .git subdirectory in your current working directory. This will also create a new main branch.
+
+Que.3      How to tell git about your name and email?
+(Answer)         To set our global commit name and email address run the git config command with the --global option:
+
+git config --global user.name "Your Name"
+git config --global user.email "youremail@yourdomain.com"
+CopyCopy
+Once done, you can confirm that the information is set by running:
+
+Que. 4      How to add a file to the stagging area?
+(Answer)       we can add a file to the stagging area by using  'git add' command.
+                        git add file_name
+
+Que. 5     How to remove a file from the stagging area?
+(Answer)         To remove files from the staging area use git reset file_name. The command removes any file specified as a parameter from the staging area.
+
+Que.6      How to make a commit?
+(Answer)        Since we have finished our work, we are ready move from stage to commit for our repo.
+
+Adding commits keep track of our progress and changes as we work. Git considers each commit change point or "save point". It is a point in the project you can go back to if you find a bug, or want to make a change.
+
+When we commit, we should always include a message.
+
+By adding clear messages to each commit, it is easy for yourself (and others) to see what has changed and when.
+
+Que. 7      How to  send your changes to a remote repository?
+(Answer)       When you make changes to your files in a Git repository, those changes are initially only saved locally on your machine. Git push enables you to send those changes to a remote repository, such as one hosted on a platform like GitHub, GitLab, or Bitbucket.
+
+Pushing your changes to a remote repository allows other developers to see and access your changes, collaborate with you, and ensure that the latest version of the codebase is always available to everyone working on the project.
+
+In order to push your changes, you need to have write access to the remote repository. If you don’t have write access, you won’t be able to push your changes.
+
+Que. 8       What is the difference between clone and pull?
+(Answer)      These are the differences between clone and pull :-
+                   
+                   clone :- git clone is how you get a local copy of an existing repository to work on. It's usually only used once for a given repository, unless you want to have multiple working copies of it around. (Or want to get a clean copy after messing up your local one...)
+           
+                 .         git clone means you are making a copy of the repository in your system.       
+
+
+                       pull :- git pull means you are fetching the last modified repository.
