@@ -1,0 +1,88 @@
+Que.1   What are the conditional operators in java?
+(Answer)   In the world of programming, conditional statements play a crucial role in controlling the flow of execution based on specific conditions. Java, being one of the most popular programming languages, provides several conditional operators that allow developers to create dynamic and flexible code. 
+And these are the types of conditional operators:-
+
+1. The Equality Operators:
+a. Equal to (==)
+b. Not equalto(=!)
+
+2. Relational operators:-
+a. Less than (<)
+b. Greater than (>)
+c. Less than equalt to (<=)
+d. Greater than equal to (>=)
+
+3. Conditional Logical Operators:
+a.Logical AND (&&)
+b. Logical OR operator (||)
+c. Logical NOT (!)
+
+Que.2   What are the types of operators based  on the number of operands?
+(Answer)  Basically there are three types of operators based on the number of operands that are :-
+   1. Unary Operators – Require only one operand 
+2. Binary Operators – Require two operands  
+3. Ternary Operators – Require three operands
+
+Que. 3   What is the use of switch case in java programming?
+(Answer)     The switch statement is a multi-way branch statement. In simple words, the Java switch statement executes one statement from multiple conditions. It is like an if-else-if ladder statement. It provides an easy way to dispatch execution to different parts of code based on the value of the expression. Basically, the expression can be a byte, short, char, or int primitive data types. It basically tests the equality of variables against multiple values.
+
+Que.4   What are the priority levels of arithmetic operation in java?
+(Answer)   These are the priority levels of the arithmetic operation in java:-
+
+          1. Multiplication   (*)
+          2. Division               (/)
+          3.Modulus              (%)
+          4. Addition              (+)
+          5. Subtraction        (-)
+
+Que.5   What are the conditional statement and use of conditional statement in java?
+(Answer)   conditional statements in Java are used to make decisions based on certain conditions. The most common conditional statements in Java are the If-Else statement, the Switch statement, and the Ternary Operator. These statements allow the program to execute different blocks of code based on specific conditions. 
+
+Java has the following conditional statements:
+
+1. Use if to specify a block of code to be executed, if a specified condition is true
+2. Use else to specify a block of code to be executed, if the same condition is false
+3. Use else if to specify a new condition to test, if the first condition is false
+4. Use switch to specify many alternative blocks of code to be executed
+
+Que.6   What is the syntax of if-else statements?
+(Answer)   These are the syntax of if-else statement :-
+
+if (condition) {
+  // block of code to be executed if the condition is true
+} else {
+  // block of code to be executed if the condition is false
+}
+
+Que.7   What are the 3 types of iterative statement in java?
+(Answer)    Basically there are three types of iterative statement in java that is :-
+          
+              1. while loop
+              2. do-while loop
+              3. for loop
+Que.8   Write the difference between for loop and do-while loop?
+(Answer)   These are the differences between for loop and do-while loop :-
+   
+for loop :- 1. tatement(s) is executed once the condition is checked.	
+                   2. It might be that statement(s) gets executed zero times.	
+                   3. For the single statement, bracket is not compulsory.	
+                   4. Initialization may be outside or in condition box.	
+
+do-while loop :-  1. Condition is checked after the statement(s) is executed.
+                                2. Statement(s) is executed at least once.
+                                3. Brackets are always compulsory.
+                                4.Initialization may be outside or within the loop. 
+                                5.do-while is exit controlled loop.
+
+Que.9    Write a program to print numbers from 1 to 10.
+(Answer)   
+
+ public class Main{
+public static void main(String args[]){
+
+for(int i=1;i<=10;i++){
+
+System.out.println(i);
+           }
+       }
+}
