@@ -1,0 +1,49 @@
+Que.1   How to create an object in java?
+(Answer)    The object is a basic building block of an OOPs language. In Java, we cannot execute any program without creating an object.Using the new keyword is the most popular way to create an object or instance of the class. When we create an instance of the class by using the new keyword, it allocates memory (heap) for the newly created object and also returns the reference of that object to that memory. The new keyword is also used to create an array. The syntax for creating an object is:
+
+ClassName object = new ClassName();  
+
+Que.2  what is the use of a new keyword in java?
+(Answer)   The new keyword is used to create the object  or instance of the class in java programming language.
+
+Que.3   What are the different types of variables in java?
+(Answer)   Basically there are three types of variables in that is :-
+
+                 1. Local variable
+                 2.  Reference variable
+                 3.  Static variable
+
+Que.4   What is the difference between Instance  variable and Local variable?
+(Answer)   These are the difference between Instance variable and Local Variable :-
+
+1. Instance variable :-
+
+        a. They are defined in class but outside the body of methods.  
+        b. These variables are created when an object is instantiated and are accessible to all constructors, methods, or blocks in class. 	
+        c. These variables are destroyed when the object is destroyed.  	
+        d .It can be accessed throughout the class.  	
+        e. They are used to reserving memory for data that the class needs and that too for the lifetime of the object.	
+        f. These variables are given a default value if it is not assigned by code.       
+        g. It is not compulsory to initialize instance variables before use.  	
+        h. It includes access modifiers such as private, public, protected, etc.  	
+
+2. Local variable :-
+
+          a. They are defined as a type of variable declared within programming blocks or subroutines. 
+          b.  These variables are created when a block, method or constructor is started and the variable will be destroyed once it exits the block, method, or constructor.
+          c.  These variables are destroyed when the constructor or method is exited.
+          d.  Its access is limited to the method in which it is declared.
+          e.   They are used to decreasing dependencies between components I.e., the complexity of code is decreased.
+          f. These variables do not always have some value, so there must be a value assigned by code.
+          g.  It is important to initialize local variables before use.
+          h.  It does not include any access modifiers such as private, public, protected, etc.
+
+Que.5   In which area memory is allocated for  instance variable and Local variable?
+(Answer)   Heap memory  area is used for instance variables memory location and , Stack memory area is used for local variables memory location.
+
+Que.6   What is method overloading?
+(Answer)   When there are multiple methods with the same name but their parameters are different then , it is called as method overloading .
+ method can be overladed by changing in the numbers arguments or changing in the types of arguments.
+example :-   void add();
+                      void add(int);
+                       void add(int,int);
