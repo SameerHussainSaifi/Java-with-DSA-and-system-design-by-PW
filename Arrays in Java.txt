@@ -1,0 +1,69 @@
+Que. 1  What do you mean by Array?
+(Answer)   An Array is a collection of similar kind of data types.
+
+Que.2   How to create an Array?
+(Answer)   To create an array of integers,we have to write
+
+int[] myNum = {10, 20, 30, 40};
+
+Que.3   can we change the size of an Array at run time?
+(Answer)   As per my understanding we can change the size of an Array at run time as per below code:-
+
+import java.util.Scanner;
+
+public class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int size=sc.nextInt();
+int num[]=new int[size];
+for(int i=0;i<size;i++){
+num[i]=sc.nextInt();
+}
+for(int j=0;j<size;j++){
+System.out.println(num[j]);
+}
+
+    }
+}
+
+Que.4   Can you declare an Array without assigning the size of an Array?
+(Answer)   No , we do not declare an Array without assigning the size of the Array.
+
+Que.5   What is the default value of Array?
+(Answer)   The default value of a String Array is null, default value of integer Array is zero (0) ,and default value of boolean array is false,and default value of double type Array is 0.0 .
+
+Que.6   What is a 1d Array with an example?
+(Answer)   One-Dimensional Array or single Dimensional Array is one in which only one-subscript specification is needed to specify a particular element of the array. One dimensional array we can be declared as follows:- data_type data_type is the type of element to be stored in the array.
+
+Example :-   int num[]={10,20,30};
+
+Que. 7   Write a program on a 2D Array?
+
+(Answer)     //   program of a 2D Array that accept input from the user.
+
+import java.util.Scanner;
+ 
+public class Main{
+public static void main(String args[]){
+
+int num[][]=new int [3][2];
+Scanner sc=new Scanner (System.in);
+System.out.println("enter the numbers ");
+for(int i=o;i<3;i++){
+       for(int j=0;j<2;j++){
+           num[i][j]=sc.nextInt();
+         }
+      }
+for(int i=o;i<3;i++){
+           for(int j=0;j<2;j++){
+System.out.println(num[i][j]+" ");
+
+        }
+System.out.println();
+    }
+  }
+}
+
+
+
+
