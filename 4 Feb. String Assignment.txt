@@ -1,0 +1,156 @@
+Que.1   Write a simple String program to take  input from user?
+(Answer)   import java.util.*;  
+class UserInputDemo1  
+{  
+public static void main(String[] args)  
+{  
+Scanner sc= new Scanner(System.in); //System.in is a standard input stream  
+System.out.print("Enter a string: ");  
+String str= sc.nextLine();              //reads string   
+System.out.print("You have entered: "+str);             
+}  
+}  
+
+
+Que.2  How do you concatenate two Strings in java? Give an example ?
+(Answer)   The Java String concat() method concatenates one string to the end of another string. It is used for string concatenation in Java.
+
+Examples of Java String concat() Method
+The following examples demonstrate how to use the String concat() function in a Java program
+
+
+// Java program to Illustrate Working of concat() method
+// with Strings
+// By explicitly assigning result
+ 
+// Main class
+class GFG {
+    // Main driver method
+    public static void main(String args[])
+    {
+        // Custom input string 1
+        String s = "Hello ";
+ 
+        // Custom input string 2
+        s = s.concat("World");
+ 
+        // Explicitly assigning result by
+        // Combining(adding, concatenating strings)
+        // using concat() method
+ 
+        // Print and display combined string
+        System.out.println(s);
+    }
+}
+
+Que.3  How do you find the length of a String in java .Explain with an example.
+(Answer)   The Java String class length() method finds the length of a string. 
+
+Java String length() method example
+
+public class LengthExample{ 
+ 
+public static void main(String args[]){  
+
+String s1="javatpoint";  
+String s2="python";  
+
+System.out.println("string length is: "+s1.length());//10 is the length of javatpoint string  
+System.out.println("string length is: "+s2.length());//6 is the length of python string  
+}
+}  
+
+Output:
+
+string length is: 10
+string length is: 6
+
+Que.4   How do you compare two Strings in java ? Give an Example.
+(Answer)  We can compare String in Java on the basis of content and reference.
+There are three ways to compare String in Java:
+
+By Using equals() Method
+By Using == Operator
+By compareTo() Method
+
+class Teststringcomparison1{  
+ public static void main(String args[]){  
+   String s1="Sachin";  
+   String s2="Sachin";  
+   String s3=new String("Sachin");  
+   String s4="Saurav";  
+   System.out.println(s1.equals(s2));//true  
+   System.out.println(s1.equals(s3));//true  
+   System.out.println(s1.equals(s4));//false  
+ }  
+}  
+
+Output:
+
+true
+true
+false
+
+Que.5   Write a program to find the length of the String "refrigerator".
+(Answer) 
+  public class Main{
+public static void main(String args[]){
+String st="refrigerator";
+System.out.println(st.length());
+}
+}
+
+
+
+Que.6   Write a program to check if the letter 'e' is present in the word "umbrella".
+(Answer)   public class CheckLetterExample {
+  public static void main(String[] args) {
+    String word = "Umbrella";
+    boolean containsE = word.contains("e");
+    if (containsE) {
+      System.out.println("The word " + word + " contains the letter 'e'");
+    } else {
+      System.out.println("The word " + word + " does not contain the letter 'e'");
+    }
+  }
+}
+Output:
+The word Umbrella contains the letter 'e'
+
+
+Que. 7  Write a program to delete all constants from the String "Hello, have a good day".
+(Answer)   
+public class Main{
+public static void main(String args[]){
+
+string str = "Hello, have a good day", str1;
+
+ for (int i = 0, j =0; i < str.length(); ++i)
+ {
+
+
+    if((str[i]>='a'&& str[i]<='z') || (str[i]>='A'&& str[i]<='Z'))
+        if (str[i] == 'I' || str[i] == 'i' || str[i] == 'U' || str[i] == 'u' || str[i] == 'O' || str[i] == 'o' || 
+            str[i] == 'A' || str[i] == 'a' || str[i] == 'E' || str[i] == 'e' )
+        {
+            str1[j] = str[i];
+            j++;
+        }
+    else 
+    {
+        str1[j] = str[i];
+        j++;
+
+    }   
+
+ }
+
+ System.out.println(str1);
+
+
+
+
+    }
+}
+
+
