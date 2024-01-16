@@ -1,0 +1,56 @@
+Que.1   What is a String in java?
+(Answer)   The string is a sequence of characters. In Java, objects of String are immutable which means a constant and cannot be changed once created.
+
+Que.2   Types of String in java are?
+(Answer)    Basically there are two types of String in java that is :-
+  a.   Muttble
+  b. Immutable
+
+Que.3   In how many ways  can you  create  String objects in java?
+(Answer)   We can create String object in java by these following ways:-
+
+
+Step 1 − Assigning a string value wrapped in " " to a String type variable.
+
+String message = "Hello Welcome to Tutorialspoint";
+
+Step 2 − Creating an object of the String class using the new keyword by passing the string value as a parameter of its constructor.
+
+String message = new String ("Hello Welcome to Tutorialspoint");
+
+Step 3 − Passing a character array to the String constructor.
+
+char arr[] = {'H','e','l','l','o'};
+String message = new String(arr);
+
+
+Que.4    What is String constant pool?
+(Answer)   A Java String Pool is a place in heap memory where all the strings defined in the program are stored. A separate place in a stack is there where the variable storing the string is stored. Whenever we create a new string object, JVM checks for the presence of the object in the String pool, If String is available in the pool, the same object reference is shared with the variable, else a new object is created.
+
+
+Que.5   What do you mean by mutable and Immutable object?
+(Answer)   Mutable object:-  The mutable objects are objects whose value can be changed after initialization. We can change the object's values, such as field and states, after the object is created. For example, Java.util.Date, StringBuilder, StringBuffer, etc.
+
+When we made a change in existing mutable objects, no new object will be created; instead, it will alter the value of the existing object. These object's classes provide methods to make changes in it.The Getters and Setters ( get() and set() methods ) are available in mutable objects. The Mutable object may or may not be thread-safe.
+
+Immutable object :- The immutable objects are objects whose value can not be changed after initialization. We can not change anything once the object is created. For example, primitive objects such as int, long, float, double, all legacy classes, Wrapper class, String class, etc.
+In a nutshell, immutable means unmodified or unchangeable. Once the immutable objects are created, its object values and state can not be changed.
+
+Only Getters ( get() method) are available not Setters ( set() method) for immutable objects.
+
+
+Que.6 What are exactly in String constant pool?
+(Answer)   JVM checks the string constant pool every time whenever a string literal is created. JVM will create a new object if string literal is not present in the string pool but no new object will be created in the pool if string literal is already present in the pool, a reference of the already existing object will be returned.
+
+String str1 = "w3spoint";
+String str2 = "w3spoint";
+
+
+
+
+
+
+
+
+
+
