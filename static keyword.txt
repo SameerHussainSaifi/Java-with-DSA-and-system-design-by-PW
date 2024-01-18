@@ -1,0 +1,103 @@
+Que.1   Why do we need static keyword in Java Explain with an example?
+(Answer)  The static keyword in Java is used for memory management mainly. We can apply static keyword with variables, methods, blocks and nested classes. The static keyword belongs to the class than an instance of the class.
+The static can be:
+
+1. Variable (also known as a class variable)
+2. Method (also known as a class method)
+3. Block
+
+Example :-
+
+public class Main{
+static int num=10;
+static public void displayMessage(){
+System.out.println("this is a static method");
+}
+
+static{
+System.out.println("this is a static block");
+}
+
+
+public static void main(String args[]){
+
+System.out.println(num);
+displayMessage();
+}
+   }
+
+Que. 2  What is class loading and how does the Java program actually executes?
+(Answer)   Class Loading is the process of storing the class-specific information in the memory. Class-specific information means, information about the class members, i.e., variables and methods. It is just like that before firing a bullet, first, we need to load the bullet into the pistol. Similarly, to use a class first we need to load it by a class loader. Static block runs only once in the life of a class. It can only access the static members and will only belong to the class.
+
+Que.3  Can we mark a local variable as static ?
+(Answer)   Yes , we can mark a local variable as static .
+
+Que.4  Why is the static block executed before the main method in Java?
+(Answer)   In Java, the static block is always executed before the main method because it is stored in the memory at the class loading and before the object creation.
+
+
+Que.5  Why is a static method also called a class method ?
+(Answer)   A static method is also called a class method because whenever we create a static method in a class then to invoke that static method we dont have to need the create a object of that class in which this static method is made for calling that static method.
+
+Que.6   What is the use of static blocks in java?
+ (Answer) static block is used to execute those lines of  codes  before the main method is executed because it is stored in the memory  at the class loading and before the object creation. 
+
+
+Que.7  Difference between static and instance variables.
+(Answer)   The main differences between static and non static variables are:
+
+static varibles:-
+
+Static variable	Non static variable
+Static variables can be accessed using class name	
+Static variables can be accessed by static and non static methods	
+Static variables reduce the amount of memory used by a program.	
+In Static variable Memory is allocated only once, at the time of class loading.	
+Static variables Can be accessed from any part of the program.	
+Static variables Exists for the entire lifetime of the program.	
+Static variables Default value is assigned automatically.	
+Static variables are shared among all instances of a class.
+Static variable is like a global variable and is available to all methods.
+	
+
+instance varibles:-
+
+Non static variables can be accessed using instance of a class
+Non static variables cannot be accessed inside a static method.
+Non static variables do not reduce the amount of memory used by a program
+In non Static variable Memory is allocated each time an instance of the class is created.
+Non Static variables Can be accessed only within the class or its instance.
+Non Static variables Exists for the lifetime of the object.
+Non Static variables Default value is not assigned automatically.
+Non static variables are specific to that instance of a class.
+Non static variable is like a local variable and they can be accessed through only instance of a class.
+
+
+Que.8   Difference between static and non static members
+(Answer)   These are the main diffference between static and non static method:-
+
+static members:-
+
+A static method is a method that belongs to a class, but it does not belong to an instance of that class and this method can be called without the instance or object of that class.
+
+In the static method, the method can only access only static data members and static methods of another class or the same class but cannot access non-static methods and variables.
+
+The static method uses compile-time or early binding.
+
+The static method cannot be overridden because of early binding.
+
+In the static method, less memory is used for execution because memory allocation happens only once because the static keyword fixed a particular memory for that method in ram.
+
+
+non static members:-
+
+Every method in Java defaults to a non-static method without a static keyword preceding it. non-static methods can access any static method and static variable also, without using the object of the class.
+
+In the non-static method, the method can access static data members and static methods as well as non-static members and methods of another class or the same class. 
+
+The non-static method uses runtime or dynamic binding.
+
+The non-static method can be overridden because of runtime binding.
+
+In the non-static method, much memory is used for execution because here memory allocation happens when the method is invoked and the memory is allocated every time when the method is called.
+
