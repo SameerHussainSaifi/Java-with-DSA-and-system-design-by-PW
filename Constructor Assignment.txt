@@ -1,0 +1,54 @@
+Que.1   What is a constructor?
+(Answer)   A constructo is a special type of method which has the same name as the class name. And it being invoked automatically at time of object creation.
+
+Que.2   What is constructor chaining?
+(Answer)   Constructor chaining is the process of calling one constructor from another constructor with respect to current object. 
+
+One of the main use of constructor chaining is to avoid duplicate codes while having multiple constructor (by means of constructor overloading) and make code more readable.
+
+Que.3   Can we call a subclass constructor from a superclass constructor?
+(Answer)   yes we can call a subclass constructor from a superclass constructor.
+
+Que.4   What happens if you keep a return types for a constructor?
+(Answer)    if we kee a return types for a constructor then the compiler understand this is not a constructor it is a method.
+
+Que.5   What is no-args constructor?
+(Answer)    if we do not pass any argument in the patameters of constructor this types of constructor is known as no-args constructor.
+
+Que.6   How is a No-argument constructor different from the default constructor?
+(Answer) Basically , default constructor is that constructor which is invoked automatically by the  JVM  if there is no any other constructor is made in that class file.
+But the defaulat constructor is that constructor which is made by the programmer and it has no any arguments in the parameters.
+
+Que. 7   When do we need constructor overloading?
+(Answer)   Sometimes there is a need of initializing an object in different ways. This can be done using constructor overloading.
+
+ For example, the Thread class has 8 types of constructors. If we do not want to specify anything about a thread then we can simply use the default constructor of the Thread class, however, if we need to specify the thread name, then we may call the parameterized constructor of the Thread class with a String args like this:
+
+Que.8  What is default constructor?  Explain with an example.
+(Answer)   A constructor without any arguments or with the default value for every argument is said to be the Default constructor. 
+
+Example:-    
+class NoteBook{
+   /*This is default constructor. A constructor does
+    * not have a return type and it's name
+    * should exactly match with class name
+    */
+   NoteBook(){
+      System.out.println("Default constructor");
+   }
+   public void mymethod()
+   {
+      System.out.println("Void method of the class");
+   }
+   public static void main(String args[]){
+	/* new keyword creates the object of the class
+         * and invokes constructor to initialize object
+         */
+	NoteBook obj = new NoteBook();
+	obj.mymethod();
+   }
+}
+Output:
+
+Default constructor
+Void method of the class
