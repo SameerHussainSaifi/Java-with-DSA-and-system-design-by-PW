@@ -1,0 +1,22 @@
+Que.1 What is the lamda expression of java?
+(Answer)   In Java, Lambda expressions basically express instances of functional interfaces (An interface with a single abstract method is called a functional interface). Lambda Expressions in Java are the same as lambda functions which are the short block of code that accepts input as parameters and returns a resultant value. Lambda Expressions are recently included in Java SE 8. 
+
+Que.2   Can you pass lamda expression to a method ?When?
+(Answer)    To use a lambda expression in a method, the method should have a parameter with a single-method interface as its type. Calling the interface's method will run the lambda expression:
+
+Que.3   What is the functional interface in java 8?
+(Answer)   An Interface that contains exactly one abstract method is known as functional interface. It can have any number of default, static methods but can contain only one abstract method. It can also declare methods of object class.
+
+Functional Interface is also known as Single Abstract Method Interfaces or SAM Interfaces. It is a new feature in Java, which helps to achieve functional programming approach.
+
+
+Que.4  Why do you use lamda expressions in java?
+(Answer) we use lamda expression in java for :-
+
+1.  To provide the implementation of Functional interface.
+2.   Less coding.
+
+Que. 5  Is it mandatory for lamda expresion to hava parameters?
+(Answer)  Parameters are not mandatory It's not mandatory for a lambda expression to have parameters, you can write a lambda expression without parameters as shown below: 
+
+() -> System. out.println ("lambda without parameter");
