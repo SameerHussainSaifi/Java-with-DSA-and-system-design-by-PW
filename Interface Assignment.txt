@@ -1,0 +1,58 @@
+Que.1  What is an Interface in java?
+(Answer)   An interface in Java is a blueprint of a class. It has static constants and abstract methods.
+
+The interface in Java is a mechanism to achieve abstraction. There can be only abstract methods in the Java interface, not method body. It is used to achieve abstraction and multiple inheritance in Java.
+
+In other words, you can say that interfaces can have abstract methods and variables. It cannot have a method body
+
+
+Que.2  Which modifiers are allowed for methods in an Interface ? Explain with an exaple.
+(Answer)   As of Java7 we can have only public, abstract as modifiers for the methods of an interface.
+
+Example:-
+interface MyInterface{
+   public abstract void display();
+   public abstract void setName(String name);
+   public abstract void setAge(int age);
+}
+
+Que.3  What is the use of interface in java?or, why do we use an interface in java?
+(Answer)   There are mainly three reasons to use interface. They are given below.
+
+It is used to achieve abstraction.
+By interface, we can support the functionality of multiple inheritance.
+It can be used to achieve loose coupling.
+
+And we use interface in java to achieve security.
+
+Que.4   What is the difference between abstract class and interface in java?
+(Answer)   basically, these are the main difference between abstract class and interface:-
+
+abstract class:-
+1) Abstract class can have abstract and non-abstract methods.
+2) Abstract class doesn't support multiple inheritance.
+3) Abstract class can have final, non-final, static and non-static variables.
+4) Abstract class can provide the implementation of interface.
+5) The abstract keyword is used to declare abstract class.
+6) An abstract class can extend another Java class and implement multiple Java interfaces.
+7) An abstract class can be extended using keyword "extends".
+
+interface:-
+Interface can have only abstract methods. Since Java 8, it can have default and static methods also.
+Interface supports multiple inheritance.
+Interface has only static and final variables.
+Interface can't provide the implementation of abstract class.
+The interface keyword is used to declare interface.
+An interface can extend another Java interface only.
+An interface can be implemented using keyword "implements".
+
+
+
+
+
+
+
+
+
+
+
