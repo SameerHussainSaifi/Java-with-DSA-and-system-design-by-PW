@@ -1,0 +1,107 @@
+Que.1   What do you mean by Multithreading ? Why is it important?
+(Answer)   Multithreading in Java is a process of executing multiple threads simultaneously.
+
+A thread is a lightweight sub-process, the smallest unit of processing. Multiprocessing and multithreading, both are used to achieve multitasking.
+
+Multithreading is a function of the CPU that permits multiple threads to run independently while sharing the same process resources. A thread is a conscience sequence of instructions that may run in the same parent process as other threads.
+
+Que.2  What are the benefits of using Multithreading?
+(Answer)   These are the benefits of using Multithreading:-
+
+a.  Responsiveness – Multithreading in an interactive application may allow a program to continue running even if a part of it is blocked or is performing a lengthy operation, thereby increasing responsiveness to the user. In a non multi threaded environment, a server listens to the port for some request and when the request comes, it processes the request and then resume listening to another request. The time taken while processing of request makes other users wait unnecessarily. Instead a better approach would be to pass the request to a worker thread and continue listening to port. For example, a multi threaded web browser allow user interaction in one thread while an video is being loaded in another thread. So instead of waiting for the whole web-page to load the user can continue viewing some portion of the web-page.
+
+b.  Resource Sharing – Processes may share resources only through techniques such as-
+Message Passing
+Shared Memory
+Such techniques must be explicitly organized by programmer. However, threads share the memory and the resources of the process to which they belong by default. The benefit of sharing code and data is that it allows an application to have several threads of activity within same address space.
+
+c.  Economy – Allocating memory and resources for process creation is a costly job in terms of time and space. Since, threads share memory with the process it belongs, it is more economical to create and context switch threads. Generally much more time is consumed in creating and managing processes than in threads. In Solaris, for example, creating process is 30 times slower than creating threads and context switching is 5 times slower.
+
+d.  Scalability – The benefits of multi-programming greatly increase in case of multiprocessor architecture, where threads may be running parallel on multiple processors. If there is only one thread then it is not possible to divide the processes into smaller tasks that different processors can perform. Single threaded process can run only on one processor regardless of how many processors are available. Multi-threading on a multiple CPU machine increases parallelism.
+
+
+Que.3  What is Thread in java?
+(Answer)     Separate flow of execution is called thread.
+
+Que.4   What are the two ways of implementing thread in java?
+(Answer)      There are basically two ways of implementing thread in java as below:_
+
+1. Extending the Thread class
+2. Implementing Runnable interface
+
+Que.5  What's the difference between thread and process?
+(Answer)    These are the difference between thread and process:-
+
+Thread:-
+Thread means a segment of a process.
+
+It takes less time for creation.
+
+It takes less time for context switching.
+
+Thread is more efficient in terms of communication
+
+Process:-
+Process means any program is in execution.
+
+The process takes more time to terminate.
+
+It takes more time for creation.	
+
+It also takes more time for context switching.
+
+Que.6   How can we daemon threads?
+(Answer)   Daemon thread in Java is a service provider thread that provides services to the user thread. Its life depend on the mercy of user threads i.e. when all the user threads dies, JVM terminates this thread automatically.
+
+There are many java daemon threads running automatically e.g. gc, finalizer etc.
+
+Simple example of Daemon thread in java
+
+public class TestDaemonThread1 extends Thread{  
+ public void run(){  
+  if(Thread.currentThread().isDaemon()){//checking for daemon thread  
+   System.out.println("daemon thread work");  
+  }  
+  else{  
+  System.out.println("user thread work");  
+ }  
+ }  
+ public static void main(String[] args){  
+  TestDaemonThread1 t1=new TestDaemonThread1();//creating thread  
+  TestDaemonThread1 t2=new TestDaemonThread1();  
+  TestDaemonThread1 t3=new TestDaemonThread1();  
+  
+  t1.setDaemon(true);//now t1 is daemon thread  
+    
+  t1.start();//starting threads  
+  t2.start();  
+  t3.start();  
+ }  
+}  
+
+
+Que.7   What are the wait() and sleep() methods?
+(Answer)   wait() methods:-   The Wait() method is related to the Object class. The Wait() method is responsible for sending the calling thread into the waiting state. The Thread remains in the waiting state until another thread doesn't invoke the notify() or notifyAll() method for that object. The Thread resumes the execution after obtaining the ownership of the monitor.
+
+sleep() methods:-   The Sleep () method is related to the Thread class that is used to stop the execution of the current Thread for few seconds. The Sleep () method takes the sleeping time in milliseconds. The monitor's ownership is not lost when we use the Sleep () method and start the execution again from where it stops. In simple words, the Sleep() method is responsible for sending the current Thread into the "Non Runnable" state.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
