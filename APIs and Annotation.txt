@@ -1,0 +1,139 @@
+Que.1   Program to display current date and time in java
+(Answer)   Here's a simple Java program that displays the current date and time:
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+public class CurrentDateTime {
+    public static void main(String[] args) {
+        // Get the current date and time
+        LocalDateTime currentDateTime = LocalDateTime.now();
+
+        // Define a formatter to display the date and time in a readable format
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
+        // Format the current date and time
+        String formattedDateTime = currentDateTime.format(formatter);
+
+        // Print the formatted date and time
+        System.out.println("Current Date and Time: " + formattedDateTime);
+    }
+}
+
+Que.2   Write a program to convert a date to a String in the format  "MM/dd/yyyy".
+(Answer)    Here is a Java program that converts a given date to a string in the format "MM/dd/yyyy":
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+public class DateToString {
+    public static void main(String[] args) {
+        // Create a LocalDate object for the current date
+        LocalDate date = LocalDate.now();
+
+        // Define a formatter with the desired pattern
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+
+        // Format the date as a string
+        String formattedDate = date.format(formatter);
+
+        // Print the formatted date
+        System.out.println("Formatted Date: " + formattedDate);
+    }
+}
+
+Que.3  What is the difference between  collections and streams ? Explain with an example.
+(Answer)    The main difference between collections and streams in Java lies in how they are used to store and process data. Here’s a detailed explanation along with an example:
+
+Collections:-
+
+Storage: Collections are used to store and group objects in memory. Examples include List, Set, and Map.
+
+Mutability: Collections are usually mutable; you can add, remove, or update elements.
+
+Iteration: Collections can be iterated using loops or iterators.
+
+Eager evaluation: Operations on collections are executed immediately.
+
+Streams:-
+
+Processing: Streams are used for processing sequences of elements, such as filtering, mapping, and reducing. They don't store elements themselves but operate on source data.
+
+Immutability: Streams are immutable; once created, they cannot be changed. Operations on streams do not modify the source data.
+
+Iteration: Streams are iterated internally, allowing for operations to be chained in a fluent manner.
+
+Lazy evaluation: Streams use lazy evaluation, meaning that intermediate operations are not executed until a terminal operation is invoked.
+
+Que.4    What is enums in java? Explain with an example.
+(Answer)   In Java, an enum (short for "enumeration") is a special data type that represents a group of constants. It is used to define collections of constants in a type-safe manner. Enums are particularly useful when you have a fixed set of related constants, such as days of the week, directions, states, etc.
+
+Key Features of Enums:
+
+Type Safety: Enums provide type safety, which means that an enum variable can only hold one of the predefined constants.
+
+Methods: Enums can have methods, constructors, and fields.
+
+Constants: Enum constants are implicitly public, static, and final.
+
+Basic Example
+Here's a simple example of an enum that represents the days of the week:
+public class EnumExample {
+    // Define an enum called Day
+    public enum Day {
+        SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY
+    }
+
+    public static void main(String[] args) {
+        Day today = Day.MONDAY;
+
+        switch (today) {
+            case MONDAY:
+                System.out.println("Today is Monday.");
+                break;
+            case TUESDAY:
+                System.out.println("Today is Tuesday.");
+                break;
+            case WEDNESDAY:
+                System.out.println("Today is Wednesday.");
+                break;
+            case THURSDAY:
+                System.out.println("Today is Thursday.");
+                break;
+            case FRIDAY:
+                System.out.println("Today is Friday.");
+                break;
+            case SATURDAY:
+                System.out.println("Today is Saturday.");
+                break;
+            case SUNDAY:
+                System.out.println("Today is Sunday.");
+                break;
+        }
+    }
+}
+
+
+Que.5   What are in built annotations in java?
+(Answer)   In Java, annotations are a form of metadata that provide information about the program but do not affect the execution of the program. They are used to give instructions to the compiler, provide information for documentation, or to be used by runtime frameworks. Java provides several built-in annotations, which are divided into three categories:
+
+Annotations for the Compiler
+
+1. Annotations for the Compiler
+These annotations are used to give instructions to the Java compiler.
+
+Annotations for JavaDoc
+These annotations are used for documentation purposes and can be processed by tools like Javadoc.
+
+Meta-Annotations
+Meta-annotations are annotations that apply to other annotations. These annotations are part of the java.lang.annotation package.
+
+
+
+
+
+
+
+
+
+
