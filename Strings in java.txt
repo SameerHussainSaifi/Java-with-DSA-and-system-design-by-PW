@@ -1,0 +1,152 @@
+Que.1 What is Mutable String in java Explain with Explain with an example?
+(Answer)  In Java, a mutable string is one that can be modified after its creation. Unlike the String class, which creates immutable objects, Java provides StringBuilder and StringBuffer classes for creating mutable strings.
+
+Mutable String with StringBuilder
+The StringBuilder class is used to create mutable string objects. This means that the content of the StringBuilder can be changed after it is created, without creating new objects. This is more efficient in terms of memory and performance when compared to immutable String objects.
+
+Example:
+Here's an example to illustrate how StringBuilder works:  
+public class MutableStringExample {
+    public static void main(String[] args) {
+        // Creating a StringBuilder object
+        StringBuilder sb = new StringBuilder("Hello");
+
+        // Appending text to the StringBuilder
+        sb.append(" World");
+        System.out.println("After append: " + sb.toString());
+
+        // Inserting text at a specific position
+        sb.insert(6, "Java ");
+        System.out.println("After insert: " + sb.toString());
+
+        // Reversing the StringBuilder
+        sb.reverse();
+        System.out.println("After reverse: " + sb.toString());
+
+        // Deleting a portion of the string
+        sb.delete(0, 5);
+        System.out.println("After delete: " + sb.toString());
+
+        // Replacing a portion of the string
+        sb.replace(0, 5, "Hello");
+        System.out.println("After replace: " + sb.toString());
+    }
+}
+Output:
+After append: Hello World
+After insert: Hello Java World
+After reverse: dlroW avaJ olleH
+After delete: avaJ olleH
+After replace: Hello olleH
+
+
+Que.2   WAP to reverse a String
+input: "PWSKILLS"
+output: "SLLIKSPW"
+
+(Answer)  Here's a simple Java program to reverse the string "PWSKILLS" using the StringBuilder class:
+
+public class ReverseString {
+    public static void main(String[] args) {
+        // Original string
+        String original = "PWSKILLS";
+
+        // Using StringBuilder to reverse the string
+        StringBuilder sb = new StringBuilder(original);
+        sb.reverse();
+
+        // Convert StringBuilder back to string
+        String reversed = sb.toString();
+
+        // Print the reversed string
+        System.out.println("Original String: " + original);
+        System.out.println("Reversed String: " + reversed);
+    }
+}
+
+Explanation:
+Original String: The string "PWSKILLS" is stored in the variable original.
+StringBuilder: A StringBuilder object is created with the original string.
+Reverse: The reverse method of StringBuilder is used to reverse the string.
+Convert Back to String: The reversed string is converted back to a String object.
+Print: The original and reversed strings are printed.
+
+Output:
+Original String: PWSKILLS
+Reversed String: SLLIKSWP
+
+
+Que.3   Write a program to reverse a sentence while preserving  the position
+input: Think Twice
+output:  "kniht eciwt"
+
+(Answer)   reversing a sentence while preserving the position of words means reversing each word in place, but keeping their original positions in the sentence intact. Here's a Java program to achieve this:
+
+public class ReverseWordsInSentence {
+    public static void main(String[] args) {
+        // Original sentence
+        String sentence = "Think Twice";
+
+        // Split the sentence into words
+        String[] words = sentence.split(" ");
+
+        // Reverse each word
+        for (int i = 0; i < words.length; i++) {
+            words[i] = new StringBuilder(words[i]).reverse().toString();
+        }
+
+        // Join the reversed words back into a sentence
+        String reversedSentence = String.join(" ", words);
+
+        // Print the original and reversed sentence
+        System.out.println("Original Sentence: " + sentence);
+        System.out.println("Reversed Sentence: " + reversedSentence);
+    }
+}
+
+output:
+Original Sentence: Think Twice
+Reversed Sentence: kniht eciwT
+
+
+Que.4   WAP to sort  a  String Alphabetically.
+(Answer)    To sort a string alphabetically in Java, you can convert the string to a character array, sort the array, and then convert it back to a string. Here's a program to do that:
+
+import java.util.Arrays;
+
+public class SortStringAlphabetically {
+    public static void main(String[] args) {
+        // Original string
+        String original = "PWSKILLS";
+
+        // Convert the string to a character array
+        char[] chars = original.toCharArray();
+
+        // Sort the character array
+        Arrays.sort(chars);
+
+        // Convert the sorted character array back to a string
+        String sorted = new String(chars);
+
+        // Print the original and sorted strings
+        System.out.println("Original String: " + original);
+        System.out.println("Sorted String: " + sorted);
+    }
+}
+output:
+Original String: PWSKILLS
+Sorted String: ILLKPSSW
+
+
+
+
+
+
+
+
+
+
+
+
+
+
